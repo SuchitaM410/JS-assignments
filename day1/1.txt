@@ -1,0 +1,16 @@
+QUESTION 1 : Explore and explain various methods in console functions.
+i)console.log() : It is used to print the output to the console. We can put any type(string, array, object,boolean etc) inside the log().
+ Example : console.log('abc');  
+	console.log(1); 
+	console.log(true); 
+
+ii)connsole.error() : It is used to log error message to the console.Useful in testing of code.
+ Example : console.error('This is an error');  
+
+iii)console.warn() : It is used to log warning message to the console.
+ Example : console.warn('This is a warning.');  
+
+iv)console.clear() : It is used  to clear the console.
+
+v)console.table() : This method allows us to generate a table inside a console. The input must be an array or an object which will be shown as a table.
+ Example : console.table({'a':1, 'b':2}); 

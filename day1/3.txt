@@ -1,0 +1,21 @@
+QUESTION 3 : WHAT ARE THE DIFFERENT DATATYPES IN JAVASCRIPT.
+1) Strings : A string (or a text string) is a series of characters.
+		Example : var str1 = "Hello"
+			 var str2 = "World"
+
+2) Numbers : JavaScript has only one type of numbers.Numbers can be written with, or without decimals.
+		Example : var x1 = 34.00
+			 var x2 = 34;   
+
+3) Boolean : Booleans can only have two values: true or false.
+		Example : var x = 5;
+ 			 var y = 5;
+			 var z = 6;
+			 (x == y)       // Returns true
+			 (x == z)       // Returns false
+
+4) Arrays :JavaScript arrays are written with square brackets.Array items are separated by commas.
+		Example : var cars = ["Saab", "Volvo", "BMW"];
+
+5) Objects : JavaScript objects are written with curly braces {}.Object properties are written as name:value pairs, separated by commas.
+		Example : var person = {firstName:"John", lastName:"Doe", age:50, eyeColor:"blue"};
