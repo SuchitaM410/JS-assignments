@@ -1,0 +1,104 @@
+QUESTION 2 : String functions
+
+1) slice()- It extracts a part of a string and returns the extracted part in a new string. The method takes 2 parameters- the start position, and the end position. It can accept negative indexes.
+var str = "Hi, Hello, Everyone";
+var res = str.slice(7, 13);
+
+var str = "Hi, Hello, Everyone";
+var res = str.slice(-7, -13);
+
+2) substring()- substring() is similar to slice(). The difference is that substring() cannot accept negative indexes.
+var str = "Apple, Banana, Kiwi";
+var res = str.substring(4, 10);
+
+3) substr()- Similar to slice(). The difference is that the second parameter specifies the length of the extracted part.
+var str = "Apple, Banana, Kiwi";
+var res = str.substr(7, 6);
+
+4) replace()- It replaces a specified value with another value in a string. The replace() method does not change the string it is called on. It returns a new string.
+str = "Hello students!";
+var n = str.replace("students", "Letsupgraders");
+
+5) concat()- It joins two or more strings.
+var a = "Hello";
+var b= "World";
+var c = a.concat(" ", b);
+
+6) trim()- This  method removes whitespace from both sides of a string:
+var str = "       Hello World!        ";
+alert(str.trim());
+
+7) charAt()- It returns the character at a specified index (position) in a string:
+var str = "Hello Letsupgraders";
+str.charAt(0);            // returns H
+
+8) charCodeAt()- method returns the unicode of the character at a specified index in a string. The method returns a UTF-16 code (an integer between 0 and 65535).
+var str = "Hi Everyone";
+str.charCodeAt(0);         // returns 72
+
+9) split()- A string can be converted to an array with the split() method. If the separator is omitted, the returned array will contain the whole string in index [0]. If the separator is "", the returned array will be an array of single characters.
+var txt = "Hello";       // String
+var txt = "a,b,c,d,e";   // String
+txt.split(",");          // Split on commas
+txt.split(" ");          // Split on spaces
+txt.split("|");          // Split on pipe
+txt.split("");           // Split in characters
+
+10) indexof()- The indexOf() method returns the index of (the position of) the first occurrence of a specified text in a string. The indexOf() method cannot take regular expressions.
+var str = "How was your day Aman?";
+var pos = str.indexOf("your");
+
+11) lastIndexOf()- It returns the index of the last occurrence of a specified text in a string:
+var str = "Can you please give me your book";
+var pos = str.lastIndexOf("give");
+Both indexOf(), and lastIndexOf() return -1 if the text is not found.
+
+12) search()- It searches a string for a specified value and returns the position of the match:
+var str = "Search me!";
+var pos = str.search("Search");
+
+13) length()- The length property returns the length of a string.
+var txt = "Javascript";
+var leng = txt.length;
+
+Array functions
+
+1) shift()- It removes the first array element and "shifts" all other elements to a lower index.
+var str = ["abc", "mno", "xyz", "pqr"];
+str.shift();
+
+2) unshift() method adds a new element to an array (at the beginning), and unshifts older elements. The unshift() method returns the new array length.
+var str = ["abc", "mno", "xyz", "pqr"];
+str.unshift();
+
+3) splice()- It is used to add new items to an array.
+var str = ["abc", "mno", "xyz", "pqr"];
+str.splice(3, 0, "uvw", "xyz");
+
+4) concat()- creates a new array by merging (concatenating) existing arrays.
+var str1 = ["a", "b"];
+var str2 = ["c", "d", "e"];
+var str3 = str1.concat(str2);
+
+5) slice()- It slices out a piece of an array into a new array.
+var str = ["a", "b", "c", "d", "e"];
+var str1 = str.slice(5);
+
+6) push()- The push() method adds a new element to an array at the end.
+let str = ["a", "b", "c", "d", "e"];
+str.push("d");   
+
+7) join()- It joins all array elements into a string.
+var str = ["a", "b", "c", "d", "e"];
+str.join(" - ");
+
+8) forEach() method allows to run a function for every element of the array.
+
+9) map()- It calls the function for each element of the array and returns the array of results.
+let str = ["ab", "cd", "ef"].map(item => item.length);
+alert(str);
+
+10) sort()- The call to arr.sort() sorts the array in place, changing its element order. It also returns the sorted array, but the returned value is usually ignored, as arr itself is modified.
+let arr = [ 1, 2, 3, 4, 5 ];
+arr.sort();
+alert( arr );
