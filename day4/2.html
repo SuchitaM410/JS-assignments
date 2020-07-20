@@ -1,0 +1,16 @@
+<html>
+<head>
+<h1>Destructuring the object</h1>
+</head>
+<body>
+<script>
+const student={name : "Helsinki",
+                         age : 24,
+                         projects : {
+			diceGame : "Two player dice game using Javascript"}
+	        }
+const {name,age,projects,projects:{diceGame}}=student;
+console.log(name,age,projects,diceGame);
+</script>
+</body>
+</html>

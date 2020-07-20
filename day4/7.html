@@ -1,0 +1,36 @@
+<html>
+<head>
+<h1>To find prime numbers between 2 to n</h1>
+</head>
+<body>
+<script>
+function isPrime(i)
+{
+	for(let a=2; a<i; a++)
+	{
+		if(i%a==0)
+		{
+			return 0;
+		}
+	}
+	return 1;
+}
+let n=Number(prompt("Enter n(end number of the interval)"));
+if(n<2)
+{
+	console.log("Invalid end number of interval");
+}
+else
+{
+	for(let i=2; i<=n; i++)
+	{
+		let check=isPrime(i);
+		if(check==1)
+		{
+			console.log(i);
+		}
+	}
+}
+</script>
+</body>
+</html>

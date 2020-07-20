@@ -1,0 +1,26 @@
+<html>
+<head>
+<h1>Arrow functions</h1>
+</head>
+<body>
+<script>
+/*function ask (question, yes, no)
+{
+	if(confirm(question))
+		yes();
+	else
+		no();
+}
+ask("Do you agree?",
+        function() { alert("You agreed.");},
+        function() { alert("You cancelled the execution."); }
+);*/
+
+ask=(question, yes, no)=>(confirm(question))? yes() : no();
+ask("Do you agree?",
+        function() { alert("You agreed.");},
+        function() { alert("You cancelled the execution."); }
+);
+</script>
+</body>
+</html>

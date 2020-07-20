@@ -1,0 +1,35 @@
+<html>
+<head>
+<h1>To calculate total salary with reward of an employee<	/h1>
+</head>
+<body>
+<script>
+let sal=Number(prompt("Enter your salary"));
+var p;
+if(sal>=0 && sal<=5000)
+{
+	p=2/100;
+}
+else if(sal>=5001 && sal<=10000)
+{
+	p=5/100;
+}
+else if(sal>=10001 && sal<=20000)
+{
+	p=7/100;
+}
+else if(sal>=20001)
+{
+	p=10/100;
+}
+else
+{
+	p=0;
+}
+let reward = p*sal;
+let total = reward + sal;
+console.log(total);
+
+</script>
+</body>
+</html>
