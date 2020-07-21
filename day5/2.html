@@ -1,0 +1,81 @@
+<html>
+<head>
+<title>Question 2</title>
+</head>
+<body>
+<script>
+class User
+{
+	constructor(name,age,email)
+	{
+		this.name = name;
+		this.age = age;
+		this.email=email;
+		this.courses=[];
+	}
+	
+	login()
+	{
+		console.log(`${this.name} has logged in`);
+		return this;
+	}
+
+	logout()
+	{
+		console.log(`${this.name} has logged out`);
+		return this;
+	}
+}
+
+class Moderator extends User
+{	
+	constructor(name,age,email,coins)
+	{
+		super(name,age,email);
+		this.coins = 0;
+	}
+	addCoins()
+	{
+		this.coins++;
+		console.log(`${this.name} has ${this.coins} coins`);
+		return this;
+	}
+
+	removeCoins()
+	{
+		this.coins--;
+		console.log(`${this.name} has ${this.coins} coins`);
+		return this;   
+	}
+}
+
+class Admin extends Moderator
+{
+	addCourse(user,course)
+	{
+		user.courses.push(course);
+		console.log( );
+	}
+
+	deleteCourse(user,course)
+	{
+		user.courses.pop(course);
+		console.log();
+	}
+}
+
+let user1 = new User('USER1',20,'user1@gmail.com');
+let user2 = new User('USER2',26,'user2@yahoo.com');
+let mod = new Moderator('Moderator',25,'moderator@gmail.com');
+let admin = new Admin('admin',45,'admin@gmail.com');
+
+let users = [user1,user2,mod,admin];
+
+users.forEach(element=>{console.log(element);});
+
+admin.addCourse(user1,'Javascript');
+admin.addCourse(user1,'Python');
+
+</script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<html>
+<head>
+<title>Question 1</title>
+</head>
+<body>
+<script>
+let a
+var arr=[];
+do
+{
+	a=Number(prompt("Enter a number"));
+	arr.push(a);
+}while(a)
+let odd = arr.filter(el=>el%2!=0);
+console.log(odd);
+let cube = odd.map((el)=>el**3);
+console.log(cube);
+</script>
+</body>
+</html>
