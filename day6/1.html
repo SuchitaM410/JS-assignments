@@ -1,0 +1,21 @@
+<html>
+<head>
+<title>Change background color in every 5 seconds</title>
+</head>
+<body>
+<script>
+var color = ["blue","green","yellow","black","red"];
+var i=0;
+function change()
+{	
+	document.body.style.backgroundColor = color[i];
+	i++;
+	if(i>color.length-1)
+	{
+		i=0;
+	}
+}
+setInterval(change,5000);
+</script>
+</body>
+</html>
